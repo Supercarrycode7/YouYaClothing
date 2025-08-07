@@ -1,0 +1,33 @@
+<!-- 优雅裤装展示图 -->
+<svg width="400" height="400" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffeef8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f0e6ff;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="pants1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f093fb;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f5576c;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <rect width="400" height="400" fill="url(#bg2)"/>
+  
+  <!-- 裤子轮廓 -->
+  <path d="M160 80 L240 80 L240 180 L220 180 L220 340 L200 340 L200 180 L200 180 L180 340 L160 340 L160 180 L140 180 L140 180 Z" fill="url(#pants1)" opacity="0.9"/>
+  
+  <!-- 腰带 -->
+  <rect x="150" y="80" width="100" height="8" fill="white" opacity="0.8"/>
+  
+  <!-- 口袋装饰 -->
+  <rect x="170" y="120" width="20" height="25" fill="none" stroke="white" stroke-width="2" opacity="0.6"/>
+  <rect x="210" y="120" width="20" height="25" fill="none" stroke="white" stroke-width="2" opacity="0.6"/>
+  
+  <!-- 品牌标志 -->
+  <circle cx="200" cy="200" r="18" fill="white" opacity="0.8"/>
+  <text x="200" y="206" text-anchor="middle" font-family="Arial" font-size="11" fill="#f5576c" font-weight="bold">YY</text>
+  
+  <!-- 标题 -->
+  <text x="200" y="360" text-anchor="middle" font-family="Arial" font-size="16" fill="#333" font-weight="bold">时尚休闲裤</text>
+  <text x="200" y="380" text-anchor="middle" font-family="Arial" font-size="12" fill="#666">Comfort Fit</text>
+</svg>

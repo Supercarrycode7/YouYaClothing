@@ -1,0 +1,18 @@
+/* pages/admin/inventory.wxss */
+.header {
+  padding: 30rpx;
+  background: white;
+  border-bottom: 1rpx solid #eee;
+}
+
+.title {
+  font-size: 36rpx;
+  font-weight: bold;
+  color: #333;
+}
+
+.content {
+  padding: 40rpx;
+  text-align: center;
+  color: #666;
+}

@@ -1,0 +1,10 @@
+<!-- pages/admin/inventory.wxml -->
+<view class="container">
+  <view class="header">
+    <text class="title">库存管理</text>
+  </view>
+  
+  <view class="content">
+    <text>库存管理功能待开发...</text>
+  </view>
+</view>

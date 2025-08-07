@@ -1,0 +1,221 @@
+/* pages/admin/dashboard.wxss */
+.container {
+  background: linear-gradient(180deg, #f8f9fa 0%, #ffffff 100%);
+  min-height: 100vh;
+  padding: 0;
+}
+
+.header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 60rpx 40rpx 80rpx;
+  margin-bottom: 40rpx;
+  position: relative;
+  overflow: hidden;
+}
+
+.header::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -30%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+  border-radius: 50%;
+}
+
+.welcome {
+  position: relative;
+  z-index: 2;
+}
+
+.welcome-text {
+  font-size: 40rpx;
+  font-weight: 700;
+  color: white;
+  display: block;
+  margin-bottom: 15rpx;
+  letter-spacing: 2rpx;
+}
+
+.welcome-subtitle {
+  font-size: 26rpx;
+  color: rgba(255, 255, 255, 0.8);
+  display: block;
+  letter-spacing: 1rpx;
+}
+
+.logout-btn {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.1) 100%);
+  color: white;
+  border: 1rpx solid rgba(255, 255, 255, 0.3);
+  border-radius: 25rpx;
+  padding: 20rpx 30rpx;
+  font-size: 26rpx;
+  backdrop-filter: blur(10rpx);
+  transition: all 0.3s ease;
+  position: relative;
+  z-index: 2;
+}
+
+.logout-btn:active {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.2) 100%);
+  transform: translateY(-2rpx);
+}
+
+.menu-grid {
+  padding: 0 40rpx;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30rpx;
+  margin-bottom: 60rpx;
+}
+
+.menu-item {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.7) 100%);
+  backdrop-filter: blur(10rpx);
+  border-radius: 25rpx;
+  padding: 50rpx 30rpx;
+  text-align: center;
+  box-shadow: 0 8rpx 32rpx rgba(31, 38, 135, 0.12);
+  border: 1rpx solid rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.menu-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(102, 126, 234, 0.05) 0%, rgba(118, 75, 162, 0.05) 100%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.menu-item:active {
+  transform: translateY(-5rpx);
+  box-shadow: 0 12rpx 40rpx rgba(31, 38, 135, 0.2);
+}
+
+.menu-item:active::before {
+  opacity: 1;
+}
+
+.menu-icon {
+  font-size: 80rpx;
+  margin-bottom: 25rpx;
+  display: block;
+  position: relative;
+  z-index: 2;
+}
+
+.inventory-icon { color: #667eea; }
+.sales-icon { color: #f093fb; }
+.products-icon { color: #4ecdc4; }
+.barcode-icon { color: #ffa726; }
+
+.menu-title {
+  font-size: 32rpx;
+  font-weight: 700;
+  color: #2d3748;
+  display: block;
+  margin-bottom: 15rpx;
+  letter-spacing: 2rpx;
+  position: relative;
+  z-index: 2;
+}
+
+.menu-desc {
+  font-size: 24rpx;
+  color: #718096;
+  line-height: 1.5;
+  display: block;
+  letter-spacing: 1rpx;
+  position: relative;
+  z-index: 2;
+}
+
+.quick-actions {
+  padding: 0 40rpx 60rpx;
+}
+
+.section-title {
+  font-size: 36rpx;
+  font-weight: 700;
+  color: #2d3748;
+  margin-bottom: 30rpx;
+  padding-left: 20rpx;
+  position: relative;
+  letter-spacing: 2rpx;
+}
+
+.section-title::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 6rpx;
+  height: 30rpx;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 3rpx;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 30rpx;
+}
+
+.action-btn {
+  flex: 1;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.7) 100%);
+  backdrop-filter: blur(10rpx);
+  border: 1rpx solid rgba(255, 255, 255, 0.2);
+  border-radius: 25rpx;
+  padding: 40rpx 30rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 8rpx 32rpx rgba(31, 38, 135, 0.12);
+  transition: all 0.3s ease;
+}
+
+.action-btn:active {
+  transform: translateY(-5rpx);
+  box-shadow: 0 12rpx 40rpx rgba(31, 38, 135, 0.2);
+}
+
+.action-icon {
+  font-size: 50rpx;
+  margin-bottom: 15rpx;
+}
+
+.action-text {
+  font-size: 28rpx;
+  font-weight: 600;
+  letter-spacing: 1rpx;
+}
+
+.scan-btn {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+}
+
+.scan-btn .action-text {
+  color: white;
+}
+
+.print-btn {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  color: white;
+  border: none;
+}
+
+.print-btn .action-text {
+  color: white;
+}

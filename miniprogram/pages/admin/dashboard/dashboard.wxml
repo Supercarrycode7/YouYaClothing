@@ -1,0 +1,53 @@
+<!-- pages/admin/dashboard.wxml -->
+<view class="container">
+  <!-- 头部欢迎信息 -->
+  <view class="header">
+    <view class="welcome">
+      <text class="welcome-text">欢迎回来，管理员</text>
+      <text class="welcome-subtitle">优雅服饰店管理系统</text>
+    </view>
+    <button class="logout-btn" bindtap="logout">退出登录</button>
+  </view>
+
+  <!-- 功能菜单 -->
+  <view class="menu-grid">
+    <view class="menu-item" bindtap="navigateToInventory">
+      <view class="menu-icon inventory-icon">📦</view>
+      <text class="menu-title">库存管理</text>
+      <text class="menu-desc">商品入库、出库、库存查询</text>
+    </view>
+
+    <view class="menu-item" bindtap="navigateToSales">
+      <view class="menu-icon sales-icon">📊</view>
+      <text class="menu-title">销售统计</text>
+      <text class="menu-desc">销售数据、报表分析</text>
+    </view>
+
+    <view class="menu-item" bindtap="navigateToProducts">
+      <view class="menu-icon products-icon">👔</view>
+      <text class="menu-title">商品管理</text>
+      <text class="menu-desc">商品信息、分类管理</text>
+    </view>
+
+    <view class="menu-item" bindtap="navigateToBarcode">
+      <view class="menu-icon barcode-icon">🏷️</view>
+      <text class="menu-title">条码管理</text>
+      <text class="menu-desc">生成条码、打印标签</text>
+    </view>
+  </view>
+
+  <!-- 快速操作 -->
+  <view class="quick-actions">
+    <view class="section-title">快速操作</view>
+    <view class="action-buttons">
+      <button class="action-btn scan-btn" bindtap="scanCode">
+        <text class="action-icon">📱</text>
+        <text class="action-text">扫码操作</text>
+      </button>
+      <button class="action-btn print-btn" bindtap="printBarcode">
+        <text class="action-icon">🖨️</text>
+        <text class="action-text">打印条码</text>
+      </button>
+    </view>
+  </view>
+</view>

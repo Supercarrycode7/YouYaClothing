@@ -1,0 +1,45 @@
+<!-- pages/index/index.wxml -->
+<view class="container">
+  <!-- 轮播图 -->
+  <swiper class="banner-swiper" autoplay="{{true}}" interval="4000" duration="800" circular="{{true}}">
+    <swiper-item wx:for="{{banners}}" wx:key="id">
+      <image src="{{item.image}}" class="banner-image" mode="aspectFill" />
+    </swiper-item>
+  </swiper>
+
+  <!-- 分类导航 -->
+  <view class="category-nav">
+    <view class="category-item" wx:for="{{categories}}" wx:key="id" bindtap="navigateToCategory" data-id="{{item.id}}">
+      <image src="{{item.icon}}" class="category-icon" mode="aspectFit" />
+      <text class="category-name">{{item.name}}</text>
+    </view>
+  </view>
+
+  <!-- 新品推荐 -->
+  <view class="section">
+    <view class="section-title">新品推荐</view>
+    <view class="product-grid">
+      <view class="product-item" wx:for="{{newProducts}}" wx:key="id" bindtap="navigateToDetail" data-id="{{item.id}}">
+        <view class="product-image-container">
+          <image src="{{item.image}}" class="product-image" mode="aspectFill" />
+          <view class="tag tag-{{item.tag === '新品' ? 'new' : item.tag === '热销' ? 'hot' : item.tag === '限量' ? 'limited' : 'recommend'}}">{{item.tag}}</view>
+        </view>
+        <view class="product-info">
+          <text class="product-name">{{item.name}}</text>
+          <view class="price-container">
+            <text class="product-price">¥{{item.price}}</text>
+            <text class="original-price" wx:if="{{item.originalPrice}}">¥{{item.originalPrice}}</text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <!-- 品牌故事区块 -->
+  <view class="brand-story">
+    <view class="story-content">
+      <text class="story-title gradient-text">优雅生活，从穿着开始</text>
+      <text class="story-subtitle">专注高品质服饰设计，为您带来舒适与时尚的完美融合</text>
+    </view>
+  </view>
+</view>

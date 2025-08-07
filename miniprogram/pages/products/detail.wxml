@@ -1,0 +1,16 @@
+<!-- pages/products/detail.wxml -->
+<view class="container">
+  <swiper class="product-swiper" autoplay="{{false}}">
+    <swiper-item wx:for="{{product.images}}" wx:key="*this">
+      <image src="{{item}}" class="product-image" mode="aspectFill" />
+    </swiper-item>
+  </swiper>
+
+  <view class="product-info">
+    <view class="product-name">{{product.name}}</view>
+    <view class="product-price">¥{{product.price}}</view>
+    <view class="product-desc">{{product.description}}</view>
+  </view>
+
+  <view wx:if="{{loading}}" class="loading">加载中...</view>
+</view>

@@ -1,0 +1,20 @@
+<!-- 上衣分类图标 -->
+<svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="top_gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <circle cx="40" cy="40" r="35" fill="url(#top_gradient)" opacity="0.1"/>
+  
+  <!-- T恤轮廓 -->
+  <path d="M25 25 L55 25 L60 30 L60 35 L55 40 L55 65 L25 65 L25 40 L20 35 L20 30 Z" fill="url(#top_gradient)" opacity="0.8"/>
+  
+  <!-- 领口 -->
+  <ellipse cx="40" cy="30" rx="8" ry="5" fill="none" stroke="white" stroke-width="2"/>
+  
+  <!-- 装饰 -->
+  <line x1="32" y1="45" x2="48" y2="45" stroke="white" stroke-width="1.5" opacity="0.7"/>
+</svg>

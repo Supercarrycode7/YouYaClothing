@@ -1,0 +1,10 @@
+<!-- pages/admin/sales.wxml -->
+<view class="container">
+  <view class="header">
+    <text class="title">销售统计</text>
+  </view>
+  
+  <view class="content">
+    <text>销售统计功能待开发...</text>
+  </view>
+</view>

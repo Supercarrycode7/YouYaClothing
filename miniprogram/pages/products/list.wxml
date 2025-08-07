@@ -1,0 +1,23 @@
+<!-- pages/products/list.wxml -->
+<view class="container">
+  <view class="filter-bar">
+    <picker bindchange="onCategoryChange" value="{{categoryIndex}}" range="{{categoryNames}}">
+      <view class="picker">
+        分类: {{categoryNames[categoryIndex]}}
+      </view>
+    </picker>
+  </view>
+
+  <view class="product-list">
+    <view class="product-item" wx:for="{{products}}" wx:key="id" bindtap="navigateToDetail" data-id="{{item.id}}">
+      <image src="{{item.image}}" class="product-image" />
+      <view class="product-info">
+        <text class="product-name">{{item.name}}</text>
+        <text class="product-price">¥{{item.price}}</text>
+        <text class="product-desc">{{item.description}}</text>
+      </view>
+    </view>
+  </view>
+
+  <view wx:if="{{loading}}" class="loading">加载中...</view>
+</view>
